@@ -1,0 +1,17 @@
+@import "../../styles/Color.scss";
+
+.home {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+    .hrow {
+        display: flex;
+        flex-flow: row;
+        margin: 5em 0em;
+        gap: 3em;
+        width: 100%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}

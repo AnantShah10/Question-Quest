@@ -1,0 +1,26 @@
+@import "../../styles/Color.scss";
+
+.question {
+    display: flex;
+    flex-flow: column;
+    flex: 2;
+    
+    .hr {
+        width: 90%;
+        height: 0.075em;
+        background-color: $black;
+        margin: 0.5em auto;
+    }
+
+    .questiontitle {
+        font-size: 1.75em;
+        margin: 1em 1.5em;
+    }
+
+    .questioncontent {
+        margin: 0em 1.5em;
+        color: $darkgrey;
+        background-color: $lightgrey;
+        font-size: 1.5em;
+    }
+}

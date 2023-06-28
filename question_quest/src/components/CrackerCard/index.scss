@@ -1,0 +1,35 @@
+@import "../../styles/Color.scss";
+
+.card {
+    width: 30em;
+    height: 22.5em;
+    border: 0.175em solid $black;
+    border-radius: 0.75em;
+    cursor: pointer;
+    background-color: $white;
+
+    a {
+        text-decoration: none;
+        color: $black;
+        display: flex;
+        flex-flow: column;
+        gap: 2em;
+        align-items: center;
+        padding-top: 1.5em;
+
+        img {
+            width: 27em;
+            height: 16em;
+        }
+
+        .cracker_name {
+            font-size: 2em;
+            text-decoration: none;
+            color: $black;
+            display: flex;
+            flex-flow: column;
+            gap: 2em;
+            align-items: center;
+        }
+    }
+}

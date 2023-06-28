@@ -1,0 +1,54 @@
+@import "../../styles/Color.scss";
+
+.questioncard {
+    width: 30em;
+    height: 20em;
+    border: 0.175em solid $black;
+    border-radius: 0.75em;
+    cursor: pointer;
+    background-color: $white;
+    
+    a {
+        text-decoration: none;
+        color: $black;
+        display: flex;
+        flex-flow: column;
+        gap: 0.75em;
+        align-items: center;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+
+        .card_top {
+            display: flex;
+            flex-flow: row;
+            gap: 1em;
+            align-items: center;
+            justify-content: center;
+
+            .card_left img{
+                width: 15em;
+                height: 12.5em;
+                object-fit: contain;
+            }
+
+            .card_right {
+                display: flex;
+                flex-flow: column;
+                font-size: 1.5em;
+                align-items: center;
+                gap: 0.75em;
+
+                div img {
+                    width: 1em;
+                }
+            }
+        }
+
+        .hr {
+            width: 90%;
+            height: 0.075em;
+            background-color: $black;
+            margin: 0.5em auto;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+@import "../../styles/Color.scss";
+
+.title {
+    font-size: 2em;
+    margin: 1em 1.5em;
+}
+
+.hrow {
+    display: flex;
+    flex-flow: row;
+    margin: 2em 0em;
+    gap: 3em;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

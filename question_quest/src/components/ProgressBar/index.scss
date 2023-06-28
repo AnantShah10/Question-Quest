@@ -1,0 +1,19 @@
+@import "../../styles/Color.scss";
+
+.containerstyle {
+    height: 1em;
+    width: 90%;
+    border: 0.175em solid $black;
+    background-color: $white;
+    border-radius: 0.75em;
+    // margin: 50
+}
+
+.fillerstyle {
+    height: 100%;
+    // width: '`${completed}%`';
+    width: 90% - 5%;
+    background-color: $black;
+    border-radius: 0.75em;
+    // textAlign: 'right';
+}
