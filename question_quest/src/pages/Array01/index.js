@@ -1,9 +1,7 @@
-import "./index.scss";
-
 import { NavBar, Question, Code } from "../../components";
 
 export default function Array01(props) {
-    return <div>
+    return <>
         <NavBar />
         <div className="split">
             <Question 
@@ -38,5 +36,5 @@ export default function Array01(props) {
                 />
             <Code file_link="array/array_01" />
         </div>
-    </div>
+    </>
 }
