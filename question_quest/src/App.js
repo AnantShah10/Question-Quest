@@ -62,7 +62,7 @@ function App() {
           <Route path="/dsa_cracker/array/array_34" element={<Pages.Array34 />}></Route>
           <Route path="/dsa_cracker/array/array_35" element={<Pages.Array35 />}></Route>
           <Route path="/dsa_cracker/array/array_36" element={<Pages.Array36 />}></Route>
-          {/* <Route path="/dsa_cracker/matrix/matrix_01" element={<Pages.Matrix01 />}></Route>
+          <Route path="/dsa_cracker/matrix/matrix_01" element={<Pages.Matrix01 />}></Route>
           <Route path="/dsa_cracker/matrix/matrix_02" element={<Pages.Matrix02 />}></Route>
           <Route path="/dsa_cracker/matrix/matrix_03" element={<Pages.Matrix03 />}></Route>
           <Route path="/dsa_cracker/matrix/matrix_04" element={<Pages.Matrix04 />}></Route>
@@ -72,7 +72,7 @@ function App() {
           <Route path="/dsa_cracker/matrix/matrix_08" element={<Pages.Matrix08 />}></Route>
           <Route path="/dsa_cracker/matrix/matrix_09" element={<Pages.Matrix09 />}></Route>
           <Route path="/dsa_cracker/matrix/matrix_10" element={<Pages.Matrix10 />}></Route>
-          <Route path="/dsa_cracker/strings/strings_01" element={<Pages.Strings01 />}></Route>
+          {/*<Route path="/dsa_cracker/strings/strings_01" element={<Pages.Strings01 />}></Route>
           <Route path="/dsa_cracker/strings/strings_02" element={<Pages.Strings02 />}></Route>
           <Route path="/dsa_cracker/strings/strings_03" element={<Pages.Strings03 />}></Route>
           <Route path="/dsa_cracker/strings/strings_04" element={<Pages.Strings04 />}></Route>

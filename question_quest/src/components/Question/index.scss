@@ -9,7 +9,14 @@
         background-color: $black;
         margin: 0.5em auto;
     }
-
+    
+    img {
+        width: 20em;
+        height: 15em;
+        object-fit: contain;
+        color: $darkgrey;
+        background-color: $lightgrey;
+    }
     .questiontitle {
         font-size: 1.75em;
         margin: 1em 1.5em;
