@@ -10,6 +10,8 @@
         border: 0.175em solid $black;
         border-radius: 0.75em;
         height: 80vh;
+        width: 100%;
+        box-sizing: border-box;
         padding: 1em 0em 0em 1em;
         background-color: $lightgrey;
         color: $darkgrey;
