@@ -1,9 +1,7 @@
 @import "../../styles/Color.scss";
 
 .question {
-    display: flex;
-    flex-flow: column;
-    flex: 2;
+    width: 40%;
     
     .hr {
         width: 90%;
