@@ -467,13 +467,13 @@ function App() {
           <Route path="/dsa_cracker/heap/heap_15" element={<Pages.Heap15 />}></Route>
           <Route path="/dsa_cracker/heap/heap_16" element={<Pages.Heap16 />}></Route>
           <Route path="/dsa_cracker/heap/heap_17" element={<Pages.Heap17 />}></Route>
-          <Route path="/dsa_cracker/heap/heap_18" element={<Pages.Heap18 />}></Route>
+          <Route path="/dsa_cracker/heap/heap_18" element={<Pages.Heap18 />}></Route> */}
           <Route path="/dsa_cracker/trie/trie_01" element={<Pages.Trie01 />}></Route>
           <Route path="/dsa_cracker/trie/trie_02" element={<Pages.Trie02 />}></Route>
           <Route path="/dsa_cracker/trie/trie_03" element={<Pages.Trie03 />}></Route>
           <Route path="/dsa_cracker/trie/trie_04" element={<Pages.Trie04 />}></Route>
           <Route path="/dsa_cracker/trie/trie_05" element={<Pages.Trie05 />}></Route>
-          <Route path="/dsa_cracker/trie/trie_06" element={<Pages.Trie06 />}></Route> */}
+          <Route path="/dsa_cracker/trie/trie_06" element={<Pages.Trie06 />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
