@@ -1,40 +1,54 @@
 import { NavBar, Question, Code } from "../../components";
 
-export default function Array01(props) {
+
+export default function Trie04(props) {
     return <>
         <NavBar />
         <div className="split">
             <Question 
-                name="Reverse an Array"
-                statement={`Given an array/list 'ARR' of integers and a position ‘M’. You have to reverse the array after that position.
-                    We have an array ARR = {1, 2, 3, 4, 5, 6} and M = 3 , considering 0 based indexing so the subarray {5, 6} will be reversed and our output array will be {1, 2, 3, 4, 6, 5}`}
-                input={`The very first line of input contains an integer ‘T’ denoting the number of test cases. 
-                    The first line of every test case contains one integer ‘N’ where ‘N’ denotes the number of elements and an integer ‘M’ which denotes after which position the array has to be reversed.
-                    The second line of every test case contains ‘N’ space-separated integers which denote the elements of input of array/list.`}
-                output={`For each test case, return the required array.
-                    Output for each test case is printed on a separate line.`}
-                constraints={`1 <= T <= 10
-                    0 <= M <= N <= 5*10^4
-                    -10^9 <= ARR[i] <= 10^9
-                    Time Limit: 1 sec`}
+                name="Given a sequence of words, print all anagrams together"
+                statement={`You have been given an array/list of strings 'inputStr'. You are supposed to return the strings as groups of anagrams such that strings belonging to a particular group are anagrams of one another.
+                    An anagram is a word or phrase formed by rearranging the letters of a different word or phrase. We can generalize this in string processing by saying that an anagram of a string is another string with the same quantity of each character in it, in any order.
+                    The order in which the groups and members of the groups are printed does not matter.
+                    inputStr = {"eat","tea","tan","ate","nat","bat"}
+                    Here {“tea”, “ate”,” eat”} and {“nat”, “tan”} are grouped as anagrams. Since there is no such string in “inputStr” which can be an anagram of “bat”, thus, “bat” will be the only member in its group.`}
+                input={`The first line contains an integer 'T', which denotes the number of test cases or queries to be run. Then the test cases follow.
+                    The first line of each test case contains an integer 'N' which denotes the number of strings.                
+                    The next line contains 'N' single space-separated strings. The strings consist of lower case English alphabets only.`}
+                output={`For each test case/query, print the anagrams belonging to the same group in a single line, where all the anagrams are separated by a single space, and each group will be printed in a separate line.
+                    The output for every test case will be printed in a separate line.`}
+                constraints={`1<= T <= 50
+                    1<= N <= 100
+                    1<= K <= 10                    
+                    Where 'T' is the number of test cases, 'N' is the length of the given array/list of strings and ‘K’ is the maximum length of a string in the given array/list.
+                    Time limit: 1 sec.`}
                 sampleinput1={`2
-                    6 3
-                    1 2 3 4 5 6
-                    5 2
-                    10 9 8 7 6`}
-                sampleoutput1={`1 2 3 4 6 5
-                    10 9 8 6 7`}
-                explanation1={`For the first test case, Considering 0-based indexing we have M = 3 so the subarray[M+1 … N-1] has to be reversed.Therefore the required output will be {1, 2, 3, 4, 6, 5}.
-                    For the second test case, Considering 0-based indexing we have M = 2 so the subarray[M+1 … N-1] has to be reversed.Therefore the required output will be {10, 9, 8, 6, 7}.`}
+                    4
+                    abab baba aabb abbc
+                    5
+                    aecd bcda acbd abdc acda`}
+                sampleoutput1={`aabb abab baba
+                    abbc
+                    abdc acbd bcda
+                    acda
+                    aecd`}
+                explanation1={`In the first test case, in the first group ["aabb", "abab", "baba"], all the strings are anagrams of one another and in the second group ["abbc"] has no anagram, so it's the only member in its group.
+                    In the second test case, in the first group ["abdc", "acbd", "bcda"] all the strings are anagrams of one another, and in second and third group, both ["acda"] and ["aecd"] have no anagram, so they are the only member in their group `}
                 sampleinput2={`2
-                    7 3
-                    1 4 5 6 6 7 7 
-                    9 3
-                    10 4 5 2 3 6 1 3 6`}
-                sampleoutput2={`1 4 5 6 7 7 6
-                    10 4 5 2 6 3 1 6 3 `}
+                    6
+                    eat tea tan ate nat bat
+                    5
+                    cat dog tac god act`}
+                sampleoutput2={`ate eat tea 
+                    bat
+                    nat tan
+                    act cat tac
+                    dog god`}
+                explanation2={`In the first test case, in the first group ["ate", "eat", "tea"] and the third group [“nat”, “tan”], all the strings are anagrams of one another and in the second group ["bat"] has no anagram, so it's the only member in its group and, 
+
+                In the second test case, in the first group ["act", "cat", "tac"] and in the second group ["dog", "god"], all the strings are anagrams of one another.`}
                 />
-            <Code file_link="array/array_01" />
+            <Code file_link="trie/trie_04" />
         </div>
     </>
 }
