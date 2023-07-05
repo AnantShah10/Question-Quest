@@ -72,7 +72,7 @@ function App() {
           <Route path="/dsa_cracker/matrix/matrix_08" element={<Pages.Matrix08 />}></Route>
           <Route path="/dsa_cracker/matrix/matrix_09" element={<Pages.Matrix09 />}></Route>
           <Route path="/dsa_cracker/matrix/matrix_10" element={<Pages.Matrix10 />}></Route>
-          {/*<Route path="/dsa_cracker/strings/strings_01" element={<Pages.Strings01 />}></Route>
+          {/* <Route path="/dsa_cracker/strings/strings_01" element={<Pages.Strings01 />}></Route>
           <Route path="/dsa_cracker/strings/strings_02" element={<Pages.Strings02 />}></Route>
           <Route path="/dsa_cracker/strings/strings_03" element={<Pages.Strings03 />}></Route>
           <Route path="/dsa_cracker/strings/strings_04" element={<Pages.Strings04 />}></Route>
@@ -186,7 +186,7 @@ function App() {
           <Route path="/dsa_cracker/linked_list/linked_list_33" element={<Pages.LinkedList33 />}></Route>
           <Route path="/dsa_cracker/linked_list/linked_list_34" element={<Pages.LinkedList34 />}></Route>
           <Route path="/dsa_cracker/linked_list/linked_list_35" element={<Pages.LinkedList35 />}></Route>
-          <Route path="/dsa_cracker/linked_list/linked_list_36" element={<Pages.LinkedList36 />}></Route>
+          <Route path="/dsa_cracker/linked_list/linked_list_36" element={<Pages.LinkedList36 />}></Route> */}
           <Route path="/dsa_cracker/bit_manipulation/bit_manipulation_01" element={<Pages.BitManipulation01 />}></Route>
           <Route path="/dsa_cracker/bit_manipulation/bit_manipulation_02" element={<Pages.BitManipulation02 />}></Route>
           <Route path="/dsa_cracker/bit_manipulation/bit_manipulation_03" element={<Pages.BitManipulation03 />}></Route>
@@ -197,7 +197,7 @@ function App() {
           <Route path="/dsa_cracker/bit_manipulation/bit_manipulation_08" element={<Pages.BitManipulation08 />}></Route>
           <Route path="/dsa_cracker/bit_manipulation/bit_manipulation_09" element={<Pages.BitManipulation09 />}></Route>
           <Route path="/dsa_cracker/bit_manipulation/bit_manipulation_10" element={<Pages.BitManipulation10 />}></Route>
-          <Route path="/dsa_cracker/greedy/greedy_01" element={<Pages.Greedy01 />}></Route>
+          {/*<Route path="/dsa_cracker/greedy/greedy_01" element={<Pages.Greedy01 />}></Route>
           <Route path="/dsa_cracker/greedy/greedy_02" element={<Pages.Greedy02 />}></Route>
           <Route path="/dsa_cracker/greedy/greedy_03" element={<Pages.Greedy03 />}></Route>
           <Route path="/dsa_cracker/greedy/greedy_04" element={<Pages.Greedy04 />}></Route>
