@@ -1,5 +1,3 @@
-import "./index.scss";
-
 import { NavBar, Question, Code } from "../../components";
 
 export default function Array04(props) {
@@ -18,10 +16,8 @@ export default function Array04(props) {
                 constraints={`1 <= T <= 10
                     1 <= N <= (5 * (10 ^ 5))
                     0 <= ARR[i] <= 2
-                    
                     Where 'N' is the size of the given array/list.
-                    And, ARR[i] denotes the i-th element in the array/list.
-                    
+                    And, ARR[i] denotes the i-th element in the array/list.   
                     Time Limit: 1sec `}
                 sampleinput1={`2
                     6

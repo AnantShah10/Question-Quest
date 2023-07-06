@@ -1,5 +1,3 @@
-import "./index.scss";
-
 import { NavBar, Question, Code } from "../../components";
 
 export default function Array02(props) {

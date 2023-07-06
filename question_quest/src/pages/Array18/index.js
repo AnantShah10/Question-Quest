@@ -1,44 +1,44 @@
-import "./index.scss";
-
 import { NavBar, Question, Code } from "../../components";
 
-export default function Array01(props) {
+export default function Array18(props) {
     return <div>
         <NavBar />
         <div className="split">
             <Question 
-                name="Reverse an Array"
-                statement={`Given an array/list 'ARR' of integers and a position ‘M’. You have to reverse the array after that position.
-                    We have an array ARR = {1, 2, 3, 4, 5, 6} and M = 3 , considering 0 based indexing so the subarray {5, 6} will be reversed and our output array will be {1, 2, 3, 4, 6, 5}`}
-                input={`The very first line of input contains an integer ‘T’ denoting the number of test cases. 
-                    The first line of every test case contains one integer ‘N’ where ‘N’ denotes the number of elements and an integer ‘M’ which denotes after which position the array has to be reversed.
-                    The second line of every test case contains ‘N’ space-separated integers which denote the elements of input of array/list.`}
-                output={`For each test case, return the required array.
-                    Output for each test case is printed on a separate line.`}
-                notes={`You do not need to print anything, it has already been taken care of. Just implement the given function.
-                    Consider 0-based indexing of the array.`}
-                constraints={`1 <= T <= 10
-                    0 <= M <= N <= 5*10^4
-                    -10^9 <= ARR[i] <= 10^9
+                name="Find all pairs on integer array whose sum is equal to given number"
+                statement={`You are given an array/list ‘ARR’ consisting of ‘N’ distinct integers arranged in ascending order. You are also given an integer ‘TARGET’. Your task is to count all the distinct pairs in ‘ARR’ such that their sum is equal to ‘TARGET’.
+                    1. Pair (x,y) and Pair(y,x) are considered as the same pair. 
+                    2. If there exists no such pair with sum equals to 'TARGET', then return -1.
+                    Let ‘ARR’ = [1 2 3] and ‘TARGET’ = 4. Then, there exists only one pair in ‘ARR’ with a sum of 4 which is (1, 3). (1, 3) and (3, 1) are counted as only one pair.`}
+                input={`The first line of input contains an integer ‘T’ which denotes the number of test cases. 
+                    The first line of each test case contains two single space-separated integers ‘N’ and ‘TARGET’ representing the number of elements in the array/list ‘ARR’ and the required pair-sum respectively.
+                    The next line of each test case contains ‘N’ single space-separated integers denoting the elements of  ‘ARR’.`}
+                output={`For each test case, return the numbers of pairs in  ‘ARR’ whose sum is equal to ‘TARGET’.`}
+                constraints={`1 <= ‘T’ <= 100
+                    2 <= ‘N’ <= 5000
+                    1 <= ‘ARR[i]’, ‘TARGET’ <= 10^5
+                    Where ARR[i]’ represents the elements of array/list ‘ARR’.                     
                     Time Limit: 1 sec`}
                 sampleinput1={`2
-                    6 3
-                    1 2 3 4 5 6
-                    5 2
-                    10 9 8 7 6`}
-                sampleoutput1={`1 2 3 4 6 5
-                    10 9 8 6 7`}
-                explanation1={`For the first test case, Considering 0-based indexing we have M = 3 so the subarray[M+1 … N-1] has to be reversed.Therefore the required output will be {1, 2, 3, 4, 6, 5}.
-                    For the second test case, Considering 0-based indexing we have M = 2 so the subarray[M+1 … N-1] has to be reversed.Therefore the required output will be {10, 9, 8, 6, 7}.`}
+                    5 6
+                    1 2 3 4 5
+                    6 7
+                    1 2 3 4 5 6`}
+                sampleoutput1={`2
+                    3`}
+                explanation1={`In test case 1, there exist only 2 pairs whose sum is equal to ‘TARGET’ i.e (1, 5) and (2, 4).
+                    In test case 2, there are 3 pairs whose sum is equal to ‘TARGET’ which are  (1, 6), (2, 5), and (3, 4).`}
                 sampleinput2={`2
-                    7 3
-                    1 4 5 6 6 7 7 
-                    9 3
-                    10 4 5 2 3 6 1 3 6`}
-                sampleoutput={` 1 4 5 6 7 7 6
-                    10 4 5 2 6 3 1 6 3 `}
+                    4 10
+                    1 3 5 6
+                    5 12
+                    1 3 6 9 11`}
+                sampleoutput2={`-1
+                    2`}
+                explanation2={`In test case 1, there is not a pair whose sum is equal to ‘TARGET’. So we return -1.
+                    In test case 2, there are 2 pairs whose sum is equal to ‘TARGET’, (1, 11) and (3, 9) respectively.`}
                 />
-            <Code file_link="array/array_01" style={{position: "fixed"}}/>
+            <Code file_link="array/array_18" />
         </div>
     </div>
 }

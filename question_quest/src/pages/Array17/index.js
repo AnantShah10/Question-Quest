@@ -1,44 +1,41 @@
-import "./index.scss";
-
 import { NavBar, Question, Code } from "../../components";
 
-export default function Array01(props) {
+export default function Array17(props) {
     return <div>
         <NavBar />
         <div className="split">
             <Question 
-                name="Reverse an Array"
-                statement={`Given an array/list 'ARR' of integers and a position ‘M’. You have to reverse the array after that position.
-                    We have an array ARR = {1, 2, 3, 4, 5, 6} and M = 3 , considering 0 based indexing so the subarray {5, 6} will be reversed and our output array will be {1, 2, 3, 4, 6, 5}`}
-                input={`The very first line of input contains an integer ‘T’ denoting the number of test cases. 
-                    The first line of every test case contains one integer ‘N’ where ‘N’ denotes the number of elements and an integer ‘M’ which denotes after which position the array has to be reversed.
-                    The second line of every test case contains ‘N’ space-separated integers which denote the elements of input of array/list.`}
-                output={`For each test case, return the required array.
-                    Output for each test case is printed on a separate line.`}
-                notes={`You do not need to print anything, it has already been taken care of. Just implement the given function.
-                    Consider 0-based indexing of the array.`}
+                name="Best time to buy and Sell stock"
+                statement={`You are given an array/list 'prices' where the elements of the array represent the prices of the stock as they were yesterday and indices of the array represent minutes. Your task is to find and return the maximum profit you can make by buying and selling the stock. You can buy and sell the stock only once.
+                    You can’t sell without buying first.
+                    For the given array [ 2, 100, 150, 120], The maximum profit can be achieved by buying the stock at minute 0 when its price is Rs. 2 and selling it at minute 2 when its price is Rs. 150. So, the output will be 148.`}
+                input={`The first line contains a single integer ‘T’ denoting the number of test cases to be run. Then the test cases follow.
+                    The first line of each test case contains a single integer ‘N’, representing the size of the array.
+                    The second line of each test case contains ‘N’ space-separated integers representing the elements of the given array.`}
+                output={`For each test case, print a single integer representing the maximum profit you can achieve. If the maximum profit is negative, print 0.
+                    Output for each test case will be printed in a separate line.`}
                 constraints={`1 <= T <= 10
-                    0 <= M <= N <= 5*10^4
-                    -10^9 <= ARR[i] <= 10^9
-                    Time Limit: 1 sec`}
+                    2 <= N <= 10^4
+                    1 <= ARR[i] <= 10^9
+                    Time Limit: 1 sec.`}
                 sampleinput1={`2
-                    6 3
-                    1 2 3 4 5 6
-                    5 2
-                    10 9 8 7 6`}
-                sampleoutput1={`1 2 3 4 6 5
-                    10 9 8 6 7`}
-                explanation1={`For the first test case, Considering 0-based indexing we have M = 3 so the subarray[M+1 … N-1] has to be reversed.Therefore the required output will be {1, 2, 3, 4, 6, 5}.
-                    For the second test case, Considering 0-based indexing we have M = 2 so the subarray[M+1 … N-1] has to be reversed.Therefore the required output will be {10, 9, 8, 6, 7}.`}
+                    4
+                    1 2 3 4
+                    4
+                    2 2 2 2`}
+                sampleoutput1={`3
+                    0`}
+                explanation1={`For the first test case, it’s optimal to buy the stock at minute 0 and sell it at minute 3 to get a maximum profit of 3.
+                    For the second test case, the maximum profit will be 0 for all possible ways of buying and selling stock.`}
                 sampleinput2={`2
-                    7 3
-                    1 4 5 6 6 7 7 
-                    9 3
-                    10 4 5 2 3 6 1 3 6`}
-                sampleoutput={` 1 4 5 6 7 7 6
-                    10 4 5 2 6 3 1 6 3 `}
+                    6
+                    17 20 11 9 12 6
+                    4
+                    98 101 66 72`}
+                sampleoutput2={`3
+                    6`}
                 />
-            <Code file_link="array/array_01" style={{position: "fixed"}}/>
+            <Code file_link="array/array_17" />
         </div>
     </div>
 }

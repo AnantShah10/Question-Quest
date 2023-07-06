@@ -1,5 +1,3 @@
-import "./index.scss";
-
 import { NavBar, Question, Code } from "../../components";
 
 export default function Array06(props) {
@@ -38,7 +36,6 @@ export default function Array06(props) {
                     Elements common to ‘ARR1’ and ‘ARR2’ are []. Therefore the number of elements common to ‘arr’ and ‘brr’ is 0. 
                     The union of ‘ARR1’ and ‘ARR2’ is [1,2,3,4]. Therefore the number of distinct elements in the union of ‘ARR1’ and ‘ARR2’ is 4.
                     Therefore the answer is 0 4.
-                    
                     Test case 2:
                     ‘ARR1’ is [2,3].
                     ‘ARR2’ is [3] 

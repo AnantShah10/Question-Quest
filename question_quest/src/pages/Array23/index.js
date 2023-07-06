@@ -1,44 +1,48 @@
-import "./index.scss";
-
 import { NavBar, Question, Code } from "../../components";
 
-export default function Array01(props) {
+export default function Array23(props) {
     return <div>
         <NavBar />
         <div className="split">
             <Question 
-                name="Reverse an Array"
-                statement={`Given an array/list 'ARR' of integers and a position ‘M’. You have to reverse the array after that position.
-                    We have an array ARR = {1, 2, 3, 4, 5, 6} and M = 3 , considering 0 based indexing so the subarray {5, 6} will be reversed and our output array will be {1, 2, 3, 4, 6, 5}`}
-                input={`The very first line of input contains an integer ‘T’ denoting the number of test cases. 
-                    The first line of every test case contains one integer ‘N’ where ‘N’ denotes the number of elements and an integer ‘M’ which denotes after which position the array has to be reversed.
-                    The second line of every test case contains ‘N’ space-separated integers which denote the elements of input of array/list.`}
-                output={`For each test case, return the required array.
-                    Output for each test case is printed on a separate line.`}
-                notes={`You do not need to print anything, it has already been taken care of. Just implement the given function.
-                    Consider 0-based indexing of the array.`}
-                constraints={`1 <= T <= 10
-                    0 <= M <= N <= 5*10^4
-                    -10^9 <= ARR[i] <= 10^9
-                    Time Limit: 1 sec`}
+                name="Find maximum product subarray"
+                statement={`You are given an array “arr'' of integers. Your task is to find the contiguous subarray within the array which has the largest product of its elements. You have to report this maximum product.
+                    An array c is a subarray of array d if c can be obtained from d by deletion of several elements from the beginning and several elements from the end.
+                    For e.g.- The non-empty subarrays of an array [1,2,3] will be- [1],[2],[3],[1,2],[2,3],[1,2,3].
+                    If arr = {-3,4,5}. All the possible non-empty contiguous subarrays of “arr” are {-3}, {4}, {5}, {-3,4}, {4,5} and {-3,4,5}.
+                    The product of these subarrays are -3, 4, 5, -12, 20 and -60 respectively.
+                    The maximum product is 20. Hence, the answer is 20.
+                    Can you solve this in linear time and constant space complexity?`}
+                input={`The first line contains an integer 'T' which denotes the number of test cases or queries to be run. Then, the T test cases follow.
+                    The first line of each test case contains a single integer N, denoting the number of elements of the array “arr”.
+                    The second line of each test case contains N space separated integers denoting the elements of the array “arr”.`}
+                output={`For each test case, print the maximum product of the contiguous non-empty subarray of the array “arr”.
+                    Output for each test case will be printed in a separate line.`}
+                constraints={`1 <= T <= 100
+                    1 <= N <= 5000
+                    -100 <= arr[i] <= 100
+                    where N is the size of the array “arr”.
+                    Time limit: 1 second`}
                 sampleinput1={`2
-                    6 3
-                    1 2 3 4 5 6
-                    5 2
-                    10 9 8 7 6`}
-                sampleoutput1={`1 2 3 4 6 5
-                    10 9 8 6 7`}
-                explanation1={`For the first test case, Considering 0-based indexing we have M = 3 so the subarray[M+1 … N-1] has to be reversed.Therefore the required output will be {1, 2, 3, 4, 6, 5}.
-                    For the second test case, Considering 0-based indexing we have M = 2 so the subarray[M+1 … N-1] has to be reversed.Therefore the required output will be {10, 9, 8, 6, 7}.`}
+                    4
+                    3 5 -2 -4
+                    5
+                    2 4 3 5 6`}
+                sampleoutput1={`120
+                    720`}
+                explanation1={`For the first test case, all the possible non-empty contiguous subarrays of “arr” are {3}, {5}, {-2}, {-4}, {3,5}, {5,-2}, {-2,-4}, {3,5,-2}, {5,-2,-4} and {3,5,-2,-4}. 
+                    The product of these subarrays are 3, 5, -2, -4, 15, -10, 8, -30, 40 and 120 respectively.
+                    So, the maximum product is 120.
+                    For the second test case, since all the elements in the array “arr” are positive, we get the maximum product subarray by multiplying all the elements in the array. So, the maximum product is 720.`}
                 sampleinput2={`2
-                    7 3
-                    1 4 5 6 6 7 7 
-                    9 3
-                    10 4 5 2 3 6 1 3 6`}
-                sampleoutput={` 1 4 5 6 7 7 6
-                    10 4 5 2 6 3 1 6 3 `}
+                    4
+                    6 0 2 -4
+                    3
+                    -1 -3 -4`}
+                sampleoutput2={`6
+                    12`}
                 />
-            <Code file_link="array/array_01" style={{position: "fixed"}}/>
+            <Code file_link="array/array_23" />
         </div>
     </div>
 }

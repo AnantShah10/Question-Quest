@@ -40,7 +40,7 @@ export default function Array(props) {
                 <QuestionList number = "22" name = "Find factorial of a large number" link = "array_22" status = "Not Complete" />
                 <QuestionList number = "23" name = "Find maximum product subarray" link = "array_23" status = "Not Complete" />
                 <QuestionList number = "24" name = "Find longest consecutive subsequence" link = "array_24" status = "Not Complete" />
-                <QuestionList number = "25" name = "Given an array of size n and a number k, fin all elements that appear more than “ n/k ” times" link = "array_25" status = "Not Complete" />
+                <QuestionList number = "25" name = "Given an array of size n and a number k, find all elements that appear more than “ n/k ” times" link = "array_25" status = "Not Complete" />
                 <QuestionList number = "26" name = "Maximum profit by buying and selling a share at most twice" link = "array_26" status = "Not Complete" />
                 <QuestionList number = "27" name = "Find whether an array is a subset of another array" link = "array_27" status = "Not Complete" />
                 <QuestionList number = "28" name = "Find the triplet that sum to a given value" link = "array_28" status = "Not Complete" />

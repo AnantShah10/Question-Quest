@@ -1,44 +1,44 @@
-import "./index.scss";
-
 import { NavBar, Question, Code } from "../../components";
 
-export default function Array01(props) {
+export default function Array11(props) {
     return <div>
         <NavBar />
         <div className="split">
             <Question 
-                name="Reverse an Array"
-                statement={`Given an array/list 'ARR' of integers and a position ‘M’. You have to reverse the array after that position.
-                    We have an array ARR = {1, 2, 3, 4, 5, 6} and M = 3 , considering 0 based indexing so the subarray {5, 6} will be reversed and our output array will be {1, 2, 3, 4, 6, 5}`}
-                input={`The very first line of input contains an integer ‘T’ denoting the number of test cases. 
-                    The first line of every test case contains one integer ‘N’ where ‘N’ denotes the number of elements and an integer ‘M’ which denotes after which position the array has to be reversed.
-                    The second line of every test case contains ‘N’ space-separated integers which denote the elements of input of array/list.`}
-                output={`For each test case, return the required array.
-                    Output for each test case is printed on a separate line.`}
-                notes={`You do not need to print anything, it has already been taken care of. Just implement the given function.
-                    Consider 0-based indexing of the array.`}
-                constraints={`1 <= T <= 10
-                    0 <= M <= N <= 5*10^4
-                    -10^9 <= ARR[i] <= 10^9
-                    Time Limit: 1 sec`}
+                name="Find duplicate in an array of N+1 Integers"
+                statement={`You are given an array ‘ARR’ of size ‘N’ containing each number between 1 and ‘N’ - 1 at least once. There is a single integer value that is present in the array twice. Your task is to find the duplicate integer value present in the array.
+                    Consider ARR = [1, 2, 3, 4, 4], the duplicate integer value present in the array is 4. Hence, the answer is 4 in this case.
+                    A duplicate number is always present in the given array.`}
+                input={`The first line of the input contains an integer, 'T,’ denoting the number of test cases.
+                    The first line of each test case contains a single integer, 'N', denoting the number of elements in the array.
+                    The second line of each test case contains 'N' space-separated integers denoting the elements of the array 'ARR'.`}
+                output={`For each test case, print a single integer - the duplicate element in the array.
+                    Print the output of each test case in a separate line.`}
+                constraints={`1 <=  T  <= 10
+                    2 <=  N <= 10 ^ 5
+                    1 <=  ARR[i]  <= N - 1
+                    Where 'T' denotes the number of test cases, 'N' denotes the number of elements in the array, and 'ARR[i]' denotes the 'i-th' element of the array 'ARR'.
+                    Time limit: 1 sec`}
                 sampleinput1={`2
-                    6 3
-                    1 2 3 4 5 6
-                    5 2
-                    10 9 8 7 6`}
-                sampleoutput1={`1 2 3 4 6 5
-                    10 9 8 6 7`}
-                explanation1={`For the first test case, Considering 0-based indexing we have M = 3 so the subarray[M+1 … N-1] has to be reversed.Therefore the required output will be {1, 2, 3, 4, 6, 5}.
-                    For the second test case, Considering 0-based indexing we have M = 2 so the subarray[M+1 … N-1] has to be reversed.Therefore the required output will be {10, 9, 8, 6, 7}.`}
+                    5
+                    4 2 1 3 1
+                    7
+                    6 3 1 5 4 3 2`}
+                sampleoutput1={`1
+                    3`}
+                explanation1={`For the first test case, 
+                    The duplicate integer value present in the array is 1. Hence, the answer is 1 in this case.
+                    For the second test case,
+                    The duplicate integer value present in the array is 3. Hence, the answer is 3 in this case.`}
                 sampleinput2={`2
-                    7 3
-                    1 4 5 6 6 7 7 
-                    9 3
-                    10 4 5 2 3 6 1 3 6`}
-                sampleoutput={` 1 4 5 6 7 7 6
-                    10 4 5 2 6 3 1 6 3 `}
+                    6 
+                    5 1 2 3 4 2  
+                    9
+                    8 7 2 5 4 7 1 3 6`}
+                sampleoutput2={`2
+                    7`}
                 />
-            <Code file_link="array/array_01" style={{position: "fixed"}}/>
+            <Code file_link="array/array_11" />
         </div>
     </div>
 }

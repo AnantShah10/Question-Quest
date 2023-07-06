@@ -1,44 +1,37 @@
-import "./index.scss";
-
 import { NavBar, Question, Code } from "../../components";
 
-export default function Array01(props) {
+export default function Array12(props) {
     return <div>
         <NavBar />
         <div className="split">
             <Question 
-                name="Reverse an Array"
-                statement={`Given an array/list 'ARR' of integers and a position ‘M’. You have to reverse the array after that position.
-                    We have an array ARR = {1, 2, 3, 4, 5, 6} and M = 3 , considering 0 based indexing so the subarray {5, 6} will be reversed and our output array will be {1, 2, 3, 4, 6, 5}`}
-                input={`The very first line of input contains an integer ‘T’ denoting the number of test cases. 
-                    The first line of every test case contains one integer ‘N’ where ‘N’ denotes the number of elements and an integer ‘M’ which denotes after which position the array has to be reversed.
-                    The second line of every test case contains ‘N’ space-separated integers which denote the elements of input of array/list.`}
-                output={`For each test case, return the required array.
-                    Output for each test case is printed on a separate line.`}
-                notes={`You do not need to print anything, it has already been taken care of. Just implement the given function.
-                    Consider 0-based indexing of the array.`}
-                constraints={`1 <= T <= 10
-                    0 <= M <= N <= 5*10^4
-                    -10^9 <= ARR[i] <= 10^9
-                    Time Limit: 1 sec`}
-                sampleinput1={`2
-                    6 3
-                    1 2 3 4 5 6
-                    5 2
-                    10 9 8 7 6`}
-                sampleoutput1={`1 2 3 4 6 5
-                    10 9 8 6 7`}
-                explanation1={`For the first test case, Considering 0-based indexing we have M = 3 so the subarray[M+1 … N-1] has to be reversed.Therefore the required output will be {1, 2, 3, 4, 6, 5}.
-                    For the second test case, Considering 0-based indexing we have M = 2 so the subarray[M+1 … N-1] has to be reversed.Therefore the required output will be {10, 9, 8, 6, 7}.`}
-                sampleinput2={`2
-                    7 3
-                    1 4 5 6 6 7 7 
-                    9 3
-                    10 4 5 2 3 6 1 3 6`}
-                sampleoutput={` 1 4 5 6 7 7 6
-                    10 4 5 2 6 3 1 6 3 `}
+                name="Merge 2 sorted arrays without using Extra space"
+                statement={`Given two non-decreasing sorted arrays, ‘A’ and ‘B’, having ‘N’ and ‘M’ elements, respectively. You must merge these arrays, ‘A’ and ‘B’, into a sorted array without using extra space. Of all the 'N + M' sorted elements, array 'A' should contain the first 'N' elements, and array 'B' should have the last 'M' elements.
+                    You must perform the merge operation in place and must not allocate any extra space to merge the two arrays.
+                    When ‘N’ = 4, ‘A’ = {1, 4, 5, 7} and ‘M’ = 3, ‘B’ = {2, 3, 6}. We can merge these two arrays into {1, 2, 3, 4, 5, 6, 7} (The elements of ‘A’ are {1, 2, 3, 4} ). Hence, the answer is {1, 2, 3, 4, 5, 6, 7}.`}
+                input={`The first line contains two integers, ‘N’ and ‘M’, denoting the sizes of ‘A’ and ‘B’, respectively.
+                    The second line contains ‘N’ integers denoting the elements of ‘A’.
+                    The third line contains ‘M’ integers denoting the elements of ‘B’.`}
+                output={`You must merge the two sorted arrays in place. The smallest ‘N’ elements should be in ‘A’, and the greatest ‘M’ elements should be in ‘B’. You don’t have to return anything. The system will print ‘A’ + ‘B’, where ‘+’ denotes concatenation. `}
+                constraints={`1 <= N <= 10^5
+                    1 <= M <= 10^5
+                    0 <= A[i] <= 10^9
+                    0 <= B[i] <= 10^9
+                    The sum of ‘N + M’ over all test cases does not exceed 2 * 10^5.
+                    Time Limit: 1-sec`}
+                sampleinput1={`3 4
+                    1 8 8
+                    2 3 4 5`}
+                sampleoutput1={`1 2 3 4 5 8 8`}
+                explanation1={`We have ‘A’ = {1, 8, 8} and ‘B’ = {2, 3, 4, 5}. 
+                    Merging the two arrays results in {1, 2, 3, 4, 5, 8, 8}.
+                    Hence the answer is {1, 2, 3, 4, 5, 8, 8}, where ‘A’ contains {1, 2, 3} and ‘B’ contains {4, 5, 8, 8}.`}
+                sampleinput2={`4 5
+                    1 1 1 1 
+                    2 2 3 3 5`}
+                sampleoutput2={`1 1 1 1 2 2 3 3 5`}
                 />
-            <Code file_link="array/array_01" style={{position: "fixed"}}/>
+            <Code file_link="array/array_12" />
         </div>
     </div>
 }

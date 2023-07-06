@@ -1,44 +1,46 @@
-import "./index.scss";
-
 import { NavBar, Question, Code } from "../../components";
 
-export default function Array01(props) {
+export default function Array34(props) {
     return <div>
         <NavBar />
         <div className="split">
             <Question 
-                name="Reverse an Array"
-                statement={`Given an array/list 'ARR' of integers and a position ‘M’. You have to reverse the array after that position.
-                    We have an array ARR = {1, 2, 3, 4, 5, 6} and M = 3 , considering 0 based indexing so the subarray {5, 6} will be reversed and our output array will be {1, 2, 3, 4, 6, 5}`}
-                input={`The very first line of input contains an integer ‘T’ denoting the number of test cases. 
-                    The first line of every test case contains one integer ‘N’ where ‘N’ denotes the number of elements and an integer ‘M’ which denotes after which position the array has to be reversed.
-                    The second line of every test case contains ‘N’ space-separated integers which denote the elements of input of array/list.`}
-                output={`For each test case, return the required array.
-                    Output for each test case is printed on a separate line.`}
-                notes={`You do not need to print anything, it has already been taken care of. Just implement the given function.
-                    Consider 0-based indexing of the array.`}
-                constraints={`1 <= T <= 10
-                    0 <= M <= N <= 5*10^4
-                    -10^9 <= ARR[i] <= 10^9
+                name="Minimum no. of operations required to make an array palindrome"
+                statement={`You are given an array ‘A’ of length ‘N’ consisting only of positive integers. Your task is to make the given array a palindrome by using a minimum number of operations. In one operation, you can select two adjacent indexes and merge them by adding their values. After every operation, the length of the array decreases by one.
+                    Note: An array of length ‘1’ is a palindrome.
+                    Let’s say the array ‘A’ = [1, 2, 3, 4, 5], then after merging indexes 2 and 3, the array ‘A’ will look like [1, 5, 4, 5].`}
+                input={`First-line contains ‘T’, denoting the number of Test cases.
+                    For each Test case:
+                    The first line contains an integer, ‘N’, denoting the length of the array ‘A’.
+                    The following line contains ‘N’ space-separated positive integers, representing the array’s values. `}
+                output={`For each test case, you have to print an integer denoting the minimum number of operations required to turn the given array into a palindrome.`}
+                constraints={`1 <= ‘T’ <= 5
+                    1 <= ‘N’ <= 10^5 
+                    1 <= A[i] <= 10^9, for 1 <= i <= ‘N’
+                    Note- Sum of ‘N’ over all test cases does not exceed 10^5.
                     Time Limit: 1 sec`}
                 sampleinput1={`2
-                    6 3
-                    1 2 3 4 5 6
-                    5 2
-                    10 9 8 7 6`}
-                sampleoutput1={`1 2 3 4 6 5
-                    10 9 8 6 7`}
-                explanation1={`For the first test case, Considering 0-based indexing we have M = 3 so the subarray[M+1 … N-1] has to be reversed.Therefore the required output will be {1, 2, 3, 4, 6, 5}.
-                    For the second test case, Considering 0-based indexing we have M = 2 so the subarray[M+1 … N-1] has to be reversed.Therefore the required output will be {10, 9, 8, 6, 7}.`}
+                    3
+                    1 2 1
+                    5
+                    1 2 3 4 1`}
+                sampleoutput1={`0
+                    2`}
+                explanation1={`For test case 1:
+                    The given array is already a palindrome. Hence the answer is 0.
+                    For test case 2:
+                    We select indexes 3 and 4 to merge. The array will look like [1, 2, 7, 1].
+                    We select indexes 2 and 3 to merge. The array will look like [1, 9, 1].
+                    Now the array is a palindrome. Hence the answer will be 2.`}
                 sampleinput2={`2
-                    7 3
-                    1 4 5 6 6 7 7 
-                    9 3
-                    10 4 5 2 3 6 1 3 6`}
-                sampleoutput={` 1 4 5 6 7 7 6
-                    10 4 5 2 6 3 1 6 3 `}
+                    1
+                    8
+                    3
+                    1 3 3`}
+                sampleoutput2={`0
+                    2`}
                 />
-            <Code file_link="array/array_01" style={{position: "fixed"}}/>
+            <Code file_link="array/array_34" />
         </div>
     </div>
 }

@@ -14,12 +14,10 @@ export default function Question(props) {
             props.image && 
             <div className="questioncontent"><img src={props.image} alt="Example" /> </div>
         } 
-        
         {
             props.input &&
             <div className="hr" />
         }
-        
         <QuestionSection data={props.input} title="Input Format: "/>
         <QuestionSection data={props.output} title="Output Format: "/>
         {
@@ -37,6 +35,9 @@ export default function Question(props) {
         <QuestionSection data={props.sampleinput2} title="Sample Input 2: "/>
         <QuestionSection data={props.sampleoutput2} title="Sample Output 2: "/>
         <QuestionSection data={props.explanation2} title="Explanation 2: "/>
+        <QuestionSection data={props.sampleinput3} title="Sample Input 3: "/>
+        <QuestionSection data={props.sampleoutput3} title="Sample Output 3: "/>
+        <QuestionSection data={props.explanation3} title="Explanation 3: "/>
         <div className="hr" />
     </div>
 }

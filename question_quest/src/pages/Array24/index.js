@@ -1,44 +1,38 @@
-import "./index.scss";
-
 import { NavBar, Question, Code } from "../../components";
 
-export default function Array01(props) {
+export default function Array24(props) {
     return <div>
         <NavBar />
         <div className="split">
             <Question 
-                name="Reverse an Array"
-                statement={`Given an array/list 'ARR' of integers and a position ‘M’. You have to reverse the array after that position.
-                    We have an array ARR = {1, 2, 3, 4, 5, 6} and M = 3 , considering 0 based indexing so the subarray {5, 6} will be reversed and our output array will be {1, 2, 3, 4, 6, 5}`}
-                input={`The very first line of input contains an integer ‘T’ denoting the number of test cases. 
-                    The first line of every test case contains one integer ‘N’ where ‘N’ denotes the number of elements and an integer ‘M’ which denotes after which position the array has to be reversed.
-                    The second line of every test case contains ‘N’ space-separated integers which denote the elements of input of array/list.`}
-                output={`For each test case, return the required array.
-                    Output for each test case is printed on a separate line.`}
-                notes={`You do not need to print anything, it has already been taken care of. Just implement the given function.
-                    Consider 0-based indexing of the array.`}
+                name="Find longest consecutive subsequence"
+                statement={`You are given an unsorted array/list 'ARR' of 'N'  integers. Your task is to return the length of the longest consecutive sequence.
+                    The consecutive sequence is in the form ['NUM', 'NUM' + 1, 'NUM' + 2, ..., 'NUM' + L] where 'NUM' is the starting integer of the sequence and 'L' + 1 is the length of the sequence.
+                    If there are any duplicates in the given array we will count only one of them in the consecutive sequence.
+                    For the given 'ARR' [9,5,4,9,10,10,6].
+                    Output = 3
+                    The longest consecutive sequence is [4,5,6].
+                    Can you solve this in O(N) time and O(N) space complexity?`}
+                input={`The first line of input contains a single integer 'T', representing the number of test cases or queries to be run. Then the 'T' test cases follow.
+                    The first line of each test case contains integer 'N' denoting the size of the array.
+                    The second line of each test case contains 'N' single space-separated integers, elements of the array.  `}
+                output={`For each test case, print an integer in a single line that represents the length of the longest consecutive sequence.`}
                 constraints={`1 <= T <= 10
-                    0 <= M <= N <= 5*10^4
+                    1 <= N <= 10^5
                     -10^9 <= ARR[i] <= 10^9
                     Time Limit: 1 sec`}
-                sampleinput1={`2
-                    6 3
-                    1 2 3 4 5 6
-                    5 2
-                    10 9 8 7 6`}
-                sampleoutput1={`1 2 3 4 6 5
-                    10 9 8 6 7`}
-                explanation1={`For the first test case, Considering 0-based indexing we have M = 3 so the subarray[M+1 … N-1] has to be reversed.Therefore the required output will be {1, 2, 3, 4, 6, 5}.
-                    For the second test case, Considering 0-based indexing we have M = 2 so the subarray[M+1 … N-1] has to be reversed.Therefore the required output will be {10, 9, 8, 6, 7}.`}
-                sampleinput2={`2
-                    7 3
-                    1 4 5 6 6 7 7 
-                    9 3
-                    10 4 5 2 3 6 1 3 6`}
-                sampleoutput={` 1 4 5 6 7 7 6
-                    10 4 5 2 6 3 1 6 3 `}
+                sampleinput1={`1 
+                    5
+                    33 20 34 30 35`}
+                sampleoutput1={`3`}
+                explanation1={`The longest consecutive sequence is [33, 34, 35].`}
+                sampleinput2={`1
+                    7
+                    1 9 3 10 4 20 2`}
+                sampleoutput2={`4`}
+                explanation2={`The consecutive sequence is in the form ['NUM', 'NUM' + 1, 'NUM' + 2,...,'NUM' + 'L']. So in the given array, the longest consecutive sequence is [1,2,3,4] where 'NUM' = 1 and 'L' = 3. And the length of the sequence will be 'L' + 1 = 4.`}
                 />
-            <Code file_link="array/array_01" style={{position: "fixed"}}/>
+            <Code file_link="array/array_24" />
         </div>
     </div>
 }
