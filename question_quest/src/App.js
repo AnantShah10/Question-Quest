@@ -114,9 +114,10 @@ function App() {
           <Route path="/dsa_cracker/strings/strings_40" element={<Pages.Strings40 />}></Route>
           <Route path="/dsa_cracker/strings/strings_41" element={<Pages.Strings41 />}></Route>
           <Route path="/dsa_cracker/strings/strings_42" element={<Pages.Strings42 />}></Route>
-          <Route path="/dsa_cracker/strings/strings_43" element={<Pages.Strings43 />}></Route>
+          <Route path="/dsa_cracker/strings/strings_43" element={<Pages.Strings43 />}></Route> */}
           <Route path="/dsa_cracker/searching_and_sorting/searching_and_sorting_01" element={<Pages.SearchingSorting01 />}></Route>
           <Route path="/dsa_cracker/searching_and_sorting/searching_and_sorting_02" element={<Pages.SearchingSorting02 />}></Route>
+          <Route path="/dsa_cracker/searching_and_sorting/searching_and_sorting_03" element={<Pages.SearchingSorting03 />}></Route>
           <Route path="/dsa_cracker/searching_and_sorting/searching_and_sorting_03" element={<Pages.SearchingSorting03 />}></Route>
           <Route path="/dsa_cracker/searching_and_sorting/searching_and_sorting_04" element={<Pages.SearchingSorting04 />}></Route>
           <Route path="/dsa_cracker/searching_and_sorting/searching_and_sorting_05" element={<Pages.SearchingSorting05 />}></Route>
@@ -150,8 +151,8 @@ function App() {
           <Route path="/dsa_cracker/searching_and_sorting/searching_and_sorting_33" element={<Pages.SearchingSorting33 />}></Route>
           <Route path="/dsa_cracker/searching_and_sorting/searching_and_sorting_34" element={<Pages.SearchingSorting34 />}></Route>
           <Route path="/dsa_cracker/searching_and_sorting/searching_and_sorting_35" element={<Pages.SearchingSorting35 />}></Route>
-          <Route path="/dsa_cracker/searching_and_sorting/searching_and_sorting_36" element={<Pages.SearchingSorting36 />}></Route>
-          <Route path="/dsa_cracker/linked_list/linked_list_01" element={<Pages.LinkedList01 />}></Route>
+          <Route path="/dsa_cracker/searching_and_sorting/searching_and_sorting_36" element={<Pages.SearchingSorting36 />}></Route> 
+          {/*<Route path="/dsa_cracker/linked_list/linked_list_01" element={<Pages.LinkedList01 />}></Route>
           <Route path="/dsa_cracker/linked_list/linked_list_02" element={<Pages.LinkedList02 />}></Route>
           <Route path="/dsa_cracker/linked_list/linked_list_03" element={<Pages.LinkedList03 />}></Route>
           <Route path="/dsa_cracker/linked_list/linked_list_04" element={<Pages.LinkedList04 />}></Route>
